@@ -1295,8 +1295,27 @@ input[type="radio"] {
     font-size: 16px;
   }
 }
-  
+/* Reset any stray body margins */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
+/* Full-width footer, flush on all sides */
+.footer {
+  position: relative;
+  width: 100%;           /* span the entire browser width */
+  margin: 0;             /* no extra gaps */
+  padding: 60px 0;       /* vertical padding only */
+  background-color: #2e050d;
+  box-sizing: border-box;
+}
 
-
-
+/* Inner content stays centered in a 1200px container */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
